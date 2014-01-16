@@ -32,6 +32,9 @@
               var buffer = o.buffer;
               var enters = leaves = 0;
               var inside = false;
+              
+              /*Add scrollspy data object to element so options can be updated after initialization*/
+              $(element).data('scrollspy', o);
                             
               /* add listener to container */
               $container.bind('scroll', function(e){
